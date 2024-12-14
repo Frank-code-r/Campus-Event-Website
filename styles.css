@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header and Navigation */
+header {
+    background-color: navy;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    height: 60.85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: gold;
+    color: navy;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: darkgoldenrod;
+}
+
+/* Quick Links */
+.quick-links {
+    padding: 2rem;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.link-box {
+    background-color: navy;
+    color: gold;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.link-box:hover {
+    background-color: darkblue;
+}
+
+/* Login Page Background */
+.login-section {
+    min-height: calc(100vh - 60px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form Elements */
+.form-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    color: navy;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container button {
+    background-color: navy;
+    color: gold;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.form-container button:hover {
+    background-color: gold;
+    color: navy;
+}
+
+.form-container p {
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Links */
+.form-container a {
+    color: navy;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Calendar Section */
+.calendar-section {
+    color: white;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Filter Container */
+.filter-container {
+    margin-bottom: 2rem;
+}
+
+.filter-container label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.filter-container select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Calendar Container */
+.calendar-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Active Navigation Link */
+nav ul li a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Admin Section */
+.admin-section {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 5rem auto;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.admin-section h2 {
+    margin-bottom: 2rem; 
+    text-align: center;
+}
+
+.admin-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.admin-section .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-section .form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.admin-section .form-group input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.admin-section .btn {
+    background-color: navy;
+    color: gold;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-section .btn:hover {
+    background-color: darkblue;
+}
+
+/* Events Section */
+.events-section {
+    padding: 2rem;
+    color: gold;
+    text-align: center;
+}
+
+body.events-page{
+    background: url('campus_event.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+/* Event Cards */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.event-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.event-card h3 {
+    margin: 0;
+    color: navy;
+}
+
+.event-card p {
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.event-card .rsvp-btn {
+    background-color: navy;
+    color: gold;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.event-card .rsvp-btn:hover {
+    background-color: gold;
+    color: navy;
+}
+
+/* Footer */
+footer {
+    color: gold;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+
+/* Social Media Icons */
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .social-media a {
+    font-size: 2rem;
+    color: gold;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: darkgoldenrod;
+}
+
+/* Responsive Design for login section */
+@media (max-width: 768px) {
+    .login-section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Responsive Design  for calendar section*/
+@media (max-width: 768px) {
+    .calendar-section {
+        padding: 2rem 1rem;
+    }
+
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
