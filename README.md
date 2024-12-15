@@ -10,19 +10,19 @@ The project features a responsive and intuitive frontend and a robust backend to
 
 Deployment Link
 
-Campus Event Management System - Deployed Frontend (Replace with your actual deployment link on Render, Vercel, or GitHub Pages)
+Campus Event Management System - Deployed Frontend 
 
 Login Details
 
 For testing the login functionality, use the following test credentials:
 
-Username: testuser@example.com
+- Username: user@example.com
 
 Password: password123
 
 For admin functionality, use:
 
-Username: admin@example.com
+- Username: admin@example.com
 
 Password: adminpassword
 
